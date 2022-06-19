@@ -11,7 +11,7 @@
   "title": "Nj's IG is Here",
   "status": "draft",
   "experimental": false,
-  "date": "2022-06-19T09:02:04+00:00",
+  "date": "2022-06-19T10:29:40+00:00",
   "publisher": "xxxYour Work Group",
   "contact": [
     {
@@ -376,6 +376,43 @@
       }
     ],
     "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/MyPeanutAllergy"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/FoodAllergyVS"
+        },
+        "name": "Food Allergies",
+        "description": "Main Food allergies."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/FoodAllergy"
+        },
+        "name": "Food Allergy",
+        "description": "Food Allergy profile"
+      },
       {
         "extension": [
           {
