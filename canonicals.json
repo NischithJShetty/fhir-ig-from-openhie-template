@@ -1,9 +1,9 @@
 [
   {
-    "id": "xxexample.fhir.uv.myig",
+    "id": "nisj-ig",
     "type": "ImplementationGuide",
-    "url": "http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig",
+    "url": "http://njsite.org/fhir/nisj-ig/ImplementationGuide/nisj-ig",
     "version": "0.1.0-test",
-    "name": "XXYourComputableMyIGNameHere"
+    "name": "nisj-ig-IG"
   }
 ]
