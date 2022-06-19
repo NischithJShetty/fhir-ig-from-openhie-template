@@ -12,7 +12,7 @@
   <title value="Nj's IG is Here"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-06-19T09:02:04+00:00"/>
+  <date value="2022-06-19T10:29:40+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>
@@ -236,6 +236,34 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/MyPeanutAllergy"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/FoodAllergyVS"/>
+      </reference>
+      <name value="Food Allergies"/>
+      <description value="Main Food allergies."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/FoodAllergy"/>
+      </reference>
+      <name value="Food Allergy"/>
+      <description value="Food Allergy profile"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
