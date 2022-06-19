@@ -12,7 +12,7 @@
   <title value="Nj's IG is Here"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-06-19T07:14:41+00:00"/>
+  <date value="2022-06-19T07:43:20+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>
@@ -244,6 +244,11 @@
         <nameUrl value="index.html"/>
         <title value="MyIG Home Page"/>
         <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="intro.html"/>
+        <title value="Intro Page"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="changes.html"/>
