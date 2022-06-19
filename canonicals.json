@@ -1,5 +1,12 @@
 [
   {
+    "id": "FoodAllergyModel",
+    "type": "StructureDefinition",
+    "url": "http://example.com/fhir/example/StructureDefinition/FoodAllergyModel",
+    "version": "0.1.0-test",
+    "name": "FoodAllergyModel"
+  },
+  {
     "id": "nisj-ig",
     "type": "ImplementationGuide",
     "url": "http://njsite.org/fhir/nisj-ig/ImplementationGuide/nisj-ig",

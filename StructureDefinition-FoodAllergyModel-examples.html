@@ -1,9 +1,13 @@
+<!-- get modelType -->
+
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>NISJ-IG\Intro Page - FHIR v4.0.1</title>
+    <title>NISJ-IG\ - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -49,8 +53,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2"}
-    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -138,7 +142,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Intro Page</b></li>
+          
           
         </ul>
       </div>  <!-- /container -->
@@ -150,16 +154,8 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<style type="text/css">
-h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
-h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
-h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
-h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
-h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
-</style>
-<div class="col-12">
+<div style="counter-reset: section 6" class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Nj's IG is Here - Local Development build (v0.1.0-test). See the <a href="http://njsite.org/fhir/nisj-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Intro Page</h2>
   
 
 
@@ -173,37 +169,89 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-    <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="StructureDefinition-FoodAllergyModel.html">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-FoodAllergyModel-definitions.html">Detailed Descriptions</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-FoodAllergyModel-mappings.html">Mappings</a>
+    </li>
+  
+
+
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-FoodAllergyModel.profile.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-FoodAllergyModel.profile.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-FoodAllergyModel.profile.ttl.html">TTL</a>
+    </li>
+  
+
+
+</ul>
+
+
+  <a name="root"> </a>
+  <h2 id="root">Logical Model: FoodAllergyModel - Examples</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-06-19
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+   <!-- insert intro if present -->
+    
+
+
+
+
+
+  <p><b>No examples are currently available for the  Profile.</b></p>
+
+
+<!-- insert notes if present -->
+
+
+
+
 </div>
-<p>Basic styles
-————</p>
 
-<p>With this markup you can obtain <em>simple emhpasis</em> (usually rendered in italic text), <strong>strong emphasis</strong> (usually rendered in bold text), <code class="language-plaintext highlighter-rouge">source code</code> text (usually rendered in monospaced text), or <del>strikethrough</del> text (usually rendered with a line through text).</p>
-
-<p>You may use also <em>this</em> or <strong>this</strong> notation to emphatize text, and you can use all them <em><strong><code class="language-plaintext highlighter-rouge">together</code></strong></em> (and you can mix <code class="language-plaintext highlighter-rouge">*</code> and <code class="language-plaintext highlighter-rouge">_</code> )</p>
-
-<p>If you look at the source code you may note that
-even 
-if 
-you 
-break 
-the 
-lines,
-the text is kept together
-in a single paragraph</p>
-
-<p>Paragraphs are delimited by blank lines, leading and trailing spaces are removed</p>
-
-<p>You may force a line break with two spaces<br />
-or with a <code class="language-plaintext highlighter-rouge">\</code><br />
-at the end of the line</p>
-
-
-
-
-</div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -211,6 +259,29 @@ at the end of the line</p>
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    try {
+      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
+    } catch(exception) {
+    }
+
+    if (!currentTabIndex)
+      currentTabIndex = '0';
+
+    $( '#tabs' ).tabs({
+      active: currentTabIndex,
+      activate: function( event, ui ) {
+        var active = $('.selector').tabs('option', 'active');
+        currentTabIndex = ui.newTab.index();
+        document.activeElement.blur();
+        try {
+          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
+        } catch(exception) {
+        }
+      }
+    });
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
