@@ -11,7 +11,7 @@
   "title": "Nj's IG is Here",
   "status": "draft",
   "experimental": false,
-  "date": "2022-06-19T07:14:41+00:00",
+  "date": "2022-06-19T07:43:20+00:00",
   "publisher": "xxxYour Work Group",
   "contact": [
     {
@@ -384,6 +384,11 @@
           "nameUrl": "index.html",
           "title": "MyIG Home Page",
           "generation": "html"
+        },
+        {
+          "nameUrl": "intro.html",
+          "title": "Intro Page",
+          "generation": "markdown"
         },
         {
           "nameUrl": "changes.html",
