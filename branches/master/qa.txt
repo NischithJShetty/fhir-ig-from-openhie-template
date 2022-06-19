@@ -1,12 +1,14 @@
-﻿XXYourComputableMyIGNameHere : Validation Results
+﻿nisj-ig-IG : Validation Results
 =========================================
 
-err = 1, warn = 0, info = 0
+err = 1, warn = 2, info = 0
 IG Publisher Version: 1.1.121
-Generated Sun Jun 19 04:29:22 UTC 2022. FHIR version 4.0.1 for xxexample.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
- Build Errors : 0 / 0 / 0
- /github/workspace/input/myig : 1 / 0 / 1
+Generated Sun Jun 19 07:14:51 UTC 2022. FHIR version 4.0.1 for xxexample.fhir.uv.myig#0.1.0-test (canonical = http://njsite.org/fhir/nisj-ig)
+ Build Errors : 0 / 1 / 0
+ /github/workspace/input/myig : 1 / 1 / 1
 </table>
 == n/a ==
+WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be xxexample.fhir.uv.myig
 == input/myig.xml ==
-ERROR: ImplementationGuide/xxexample.fhir.uv.myig: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide)
+WARNING: ImplementationGuide/nisj-ig: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: ImplementationGuide/nisj-ig: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide)
