@@ -1,14 +1,19 @@
 ﻿nisj-ig-IG : Validation Results
 =========================================
 
-err = 1, warn = 2, info = 0
+err = 3, warn = 3, info = 0
 IG Publisher Version: 1.1.121
-Generated Sun Jun 19 07:43:34 UTC 2022. FHIR version 4.0.1 for xxexample.fhir.uv.myig#0.1.0-test (canonical = http://njsite.org/fhir/nisj-ig)
+Generated Sun Jun 19 09:02:25 UTC 2022. FHIR version 4.0.1 for xxexample.fhir.uv.myig#0.1.0-test (canonical = http://njsite.org/fhir/nisj-ig)
  Build Errors : 0 / 1 / 0
- /github/workspace/input/myig : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyModel : 3 / 1 / 1
+ /github/workspace/input/myig : 0 / 1 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be xxexample.fhir.uv.myig
+== fsh-generated/resources/StructureDefinition-FoodAllergyModel.json ==
+ERROR: StructureDefinition.where(url = 'http://example.com/fhir/example/StructureDefinition/FoodAllergyModel'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyModel.json - the canonical URL (http://njsite.org/fhir/nisj-ig/StructureDefinition/FoodAllergyModel) does not match the URL (http://example.com/fhir/example/StructureDefinition/FoodAllergyModel)
+ERROR: StructureDefinition/FoodAllergyModel: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+WARNING: StructureDefinition/FoodAllergyModel: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-FoodAllergyModel: URL Mismatch http://njsite.org/fhir/nisj-ig/StructureDefinition/FoodAllergyModel vs http://example.com/fhir/example/StructureDefinition/FoodAllergyModel
 == input/myig.xml ==
 WARNING: ImplementationGuide/nisj-ig: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-ERROR: ImplementationGuide/nisj-ig: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide)
